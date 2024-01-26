@@ -709,6 +709,10 @@ img {
   transition-property: border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
 }
 .footer-email-input::placeholder {
   color: #fff;
@@ -724,7 +728,7 @@ img {
 }
 
 .footer-subscrib-btn {
-  width: 165px;
+  min-width: 165px;
   height: 40px;
   padding: 8px 24px;
   background-color: #4d5ae5;
@@ -741,6 +745,7 @@ img {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  cursor: pointer;
 }
 .footer-btn-icon {
   margin-left: 16px;
