@@ -679,7 +679,6 @@ img {
   display: flex;
   gap: 16px;
   margin-left: 80px;
-  margin-top: 16px;
 }
 
 .footer-email-title {
@@ -690,6 +689,12 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   margin-left: 80px;
+  margin-bottom: 16px;
+}
+
+.footer-subscribe {
+  display: flex;
+  gap: 24px;
 }
 
 .footer-email-input {
