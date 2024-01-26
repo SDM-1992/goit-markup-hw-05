@@ -63,6 +63,7 @@
     </header>
 
     <main>
+      <!-- MAIN TITLE -->
       <section class="main-title">
         <div class="container title-container">
           <h1 class="title">Effective Solutions for Your Business</h1>
@@ -70,6 +71,7 @@
         </div>
       </section>
 
+      <!-- ABOUT COMPANY -->
       <section class="information-about-company">
         <div class="container">
           <h2 class="visually-hidden">Information about our company</h2>
@@ -128,6 +130,8 @@
           </ul>
         </div>
       </section>
+
+      <!-- TEAM -->
 
       <section class="team">
         <div class="container team-container">
@@ -365,6 +369,8 @@
         </div>
       </section>
 
+      <!-- PORTFOLIO -->
+
       <section class="portfolio">
         <div class="container portfolio-container">
           <h2 class="portfolio-title">Our Portfolio</h2>
@@ -545,7 +551,104 @@
             </li>
           </ul>
         </div>
+
+        <div class="footer-containeer-third">
+          <form class="footer-subscribe">
+            <label class="footer-email-label" for="footer-email"
+              >Subscribe</label
+            >
+            <div class="footer-email-wrap">
+              <input
+                class="footer-email-input"
+                type="email"
+                id="footer-email"
+                name="footer-email"
+                placeholder="E-mail"
+              />
+              <button class="footer-subscrib-btn" type="submit">
+                Subscribe
+                <svg class="footer-btn-icon" width="24" height="20">
+                  <use href="./images/icons.svg#icon-icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </footer>
+
+    <!-- BACDROP modal -->
+
+    <div class="backdrop">
+      <div class="modal">
+        <button type="button" class="modal-close-btn">
+          <svg class="close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+        <form class="modal-form">
+          <label class="modal-lable" for="user-name">Name</label>
+          <div class="modal-input-wrap">
+            <input
+              type="text"
+              class="modal-input"
+              id="user-name"
+              name="user-name"
+            />
+            <svg class="modal-input-icon" height="18" width="18">
+              <use href="/images/icons.svg#icon-person-black"></use>
+            </svg>
+          </div>
+          <label class="modal-lable" for="user-phone">Phone</label>
+          <div class="modal-input-wrap">
+            <input
+              type="tel"
+              class="modal-input"
+              id="user-phone"
+              name="user-phone"
+            />
+            <svg class="modal-input-icon" height="24" width="18">
+              <use href="/images/icons.svg#icon-phone-black"></use>
+            </svg>
+          </div>
+          <label class="modal-lable" for="user-mail">Email</label>
+          <div class="modal-input-wrap">
+            <input
+              type="email"
+              class="modal-input"
+              id="user-mail"
+              name="user-mail"
+            />
+            <svg class="modal-input-icon" height="24" width="18">
+              <use href="/images/icons.svg#icon-email-black"></use>
+            </svg>
+          </div>
+          <label class="modal-lable" for="user-comment">Comment</label>
+          <textarea
+            class="modal-comment"
+            id="user-comment"
+            placeholder="Text input"
+          ></textarea>
+          <input
+            class="approve-checkbox visually-hidden"
+            type="checkbox"
+            name="approve-check"
+            id="approve-check"
+            value="approve"
+            required
+          />
+          <label class="approve-check-text" for="approve-check">
+            <span>
+              <svg class="approve-check-icon" height="8" width="10">
+                <use href="/images/icons.svg#icon-check"></use>
+              </svg> </span
+            >I accept the terms and conditions of the
+            <a class="policy-link" href="">Privacy Policy</a>
+          </label>
+          <button class="send-btn" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
