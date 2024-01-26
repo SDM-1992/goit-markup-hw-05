@@ -632,25 +632,29 @@
             <textarea
               class="modal-comment"
               id="user-comment"
+              name="user-comment"
               placeholder="Text input"
             ></textarea>
-            <input
-              class="approve-checkbox visually-hidden"
-              type="checkbox"
-              name="approve-check"
-              id="approve-check"
-              value="approve"
-              required
-            />
+
+            <div class="approve-container">
+              <input
+                class="approve-checkbox visually-hidden"
+                type="checkbox"
+                name="approve-check"
+                id="approve-check"
+                value="approve"
+                required
+              />
+            </div>
+            <label class="approve-check-text" for="approve-check">
+              <span>
+                <svg class="approve-check-icon" height="8" width="10">
+                  <use href="/images/icons.svg#icon-check"></use>
+                </svg> </span
+              >I accept the terms and conditions of the
+              <a class="policy-link" href="">Privacy Policy</a>
+            </label>
           </div>
-          <label class="approve-check-text" for="approve-check">
-            <span>
-              <svg class="approve-check-icon" height="8" width="10">
-                <use href="/images/icons.svg#icon-check"></use>
-              </svg> </span
-            >I accept the terms and conditions of the
-            <a class="policy-link" href="">Privacy Policy</a>
-          </label>
           <button class="send-btn" type="submit">Send</button>
         </form>
       </div>
