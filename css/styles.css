@@ -661,16 +661,16 @@ img {
 .approve-check-text span {
   width: 16px;
   height: 16wh;
-  border: 1px solid #abacb3;
+  border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   margin-right: 8px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   fill: transparent;
-  transition-property: background-color, border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .approve-checkbox:checked + .approve-check-text span {
   background-color: #404bbf;
@@ -696,6 +696,11 @@ img {
   margin-left: 95px;
   padding: 16px 66.5px;
   border: none;
+  display: block;
+  min-width: 169px;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-containeer-third {
